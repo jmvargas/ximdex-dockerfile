@@ -71,6 +71,7 @@ RUN cd /var/www/html; rm -rf *; git clone https://github.com/XIMDEX/ximdex.git .
 RUN easy_install supervisor
 ADD supervisord.conf /etc/supervisord.conf
 
+# Exposing port 5000
 EXPOSE 5000
 
 CMD ["supervisord", "-n"]
