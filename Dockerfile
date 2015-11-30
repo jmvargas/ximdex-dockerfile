@@ -74,4 +74,5 @@ ADD supervisord.conf /etc/supervisord.conf
 # Exposing port 5000
 EXPOSE 5000
 
+# Run supervisor
 CMD ["supervisord", "-n"]
